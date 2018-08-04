@@ -1,0 +1,13 @@
+@mixin boxShadow($shadow) {
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin tan($tan) {
+    -webkit-transition: all $tan ease-in-out;
+    -moz-transition: all $tan ease-in-out;
+    -ms-transition: all $tan ease-in-out;
+    -o-transition: all $tan ease-in-out;
+    transition: all $tan ease-in-out;
+    
+}

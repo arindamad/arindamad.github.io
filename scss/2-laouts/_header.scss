@@ -1,0 +1,27 @@
+header{
+    background: $mc-1; 
+    padding: 10px 0; 
+    .logo{
+        font-size: 26px;
+        color: #ffffff;
+    }
+    nav{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between; 
+            li{
+                width: auto;
+                flex:  0 0 auto;
+                -ms-flex:  0 0 auto;
+                color: #f2f2f2;                
+                a{
+                    padding:0 15px; 
+                }
+                a:hover{
+                    color: $headerTxt;  
+                }
+            }
+        }
+    }  
+}
