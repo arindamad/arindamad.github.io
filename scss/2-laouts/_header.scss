@@ -1,6 +1,11 @@
 header{
-    background: $mc-1; 
-    padding: 10px 0; 
+    background: $mc; 
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 6; 
     .logo{
         font-size: 26px;
         color: #ffffff;

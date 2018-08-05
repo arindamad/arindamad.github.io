@@ -154,5 +154,14 @@
       </footer>
       <script src="js/jquery.min.js"></script>
       <script src="js/myjs.js"></script>
+      <script type="text/javascript">
+        var scroll = $(document).scrollTop();
+       // console.log(scroll);
+       if(scroll<=150){
+           $("hader").addClass("fixed");
+       } else{
+           $("hader").removeClass("fixed");
+       }
+      </script>
 </body>
 </html>

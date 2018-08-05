@@ -1830,18 +1830,23 @@ h2 {
 ::-moz-selection {
   /* Code for Firefox */
   color: #ffffff;
-  background: #ff3b49;
+  background: #0b4c86;
 }
 
 ::selection {
   color: #ffffff;
-  background: #ff3b49;
+  background: #0b4c86;
 }
 
 /*2-laouts*/
 header {
-  background: #616161;
+  background: #0b4c86;
   padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6;
 }
 header .logo {
   font-size: 26px;
@@ -1866,6 +1871,7 @@ header nav ul li a:hover {
 
 #intro {
   padding: 40px 0;
+  margin-top: 52px;
 }
 #intro .profileImg {
   width: 100%;
@@ -1914,7 +1920,7 @@ header nav ul li a:hover {
 }
 #aboutMe .personalInfo .resume .downloadResume {
   padding: 8px 50px;
-  background: #ff3b49;
+  background: #0b4c86;
   color: #f2f2f2;
   border: 1px solid transparent;
   -webkit-transition: all 300ms ease-in-out;
@@ -1926,8 +1932,8 @@ header nav ul li a:hover {
 #aboutMe .personalInfo .resume .downloadResume:hover, #aboutMe .personalInfo .resume .downloadResume:focus {
   outline: none;
   background: #f2f2f2;
-  color: #ff3b49;
-  border: 1px solid #ff3b49;
+  color: #0b4c86;
+  border: 1px solid #0b4c86;
 }
 #aboutMe .skills ul li {
   padding: 10px 0;
@@ -1948,7 +1954,7 @@ header nav ul li a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background: #ff3b49;
+  background: #0b4c86;
   bottom: 0;
   left: 0;
   z-index: 5;
@@ -2015,11 +2021,11 @@ header nav ul li a:hover {
   left: -25px;
   transform: translateY(-50%);
   text-align: center;
-  color: #ff3b49;
+  color: #0b4c86;
 }
 
 footer {
-  background: #ff3b49;
+  background: #0b4c86;
   padding: 60px 0 50px;
 }
 footer .smallHeading {
@@ -2064,7 +2070,7 @@ footer p {
 
 .sendTxt {
   padding: 0 45px;
-  background: #ff3b49;
+  background: #0b4c86;
   border: none;
   font-size: 16px;
   color: #fff;
