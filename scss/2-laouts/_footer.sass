@@ -1,6 +1,8 @@
 footer
-  background: $mc
+  background: #4a4a4a
   padding: 60px 0 50px
+  position: relative
+  z-index: 2
   .smallHeading
     font-size: 18px
     color: #ffeee2
@@ -59,3 +61,12 @@ footer
 .form-control
   width: 100%
   padding: 10px
+footer:after
+  content: ""
+  width: 50%
+  height: 100%
+  background: #383838
+  top: 0
+  left: 0
+  position: absolute
+  z-index: -1
