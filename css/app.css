@@ -1838,6 +1838,26 @@ h2 {
   background: #0b4c86;
 }
 
+/* scrollbar css */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #025fb3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0b4c86;
+}
+
 /*2-laouts*/
 header {
   background: #7d7d7d;
@@ -2118,7 +2138,7 @@ footer p {
 
 footer:after {
   content: "";
-  width: 50%;
+  width: 35%;
   height: 100%;
   background: #383838;
   top: 0;
