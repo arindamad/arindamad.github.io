@@ -5,7 +5,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- @-ms-viewport {
+@-ms-viewport {
   width: device-width;
 }
 html {
@@ -1861,16 +1861,18 @@ h2 {
 /*2-laouts*/
 header {
   background: #174763;
-  padding: 10px 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999999;
+  z-index: 6;
 }
 header .logo {
   font-size: 26px;
   color: #ffffff;
+}
+header .logo svg {
+  width: 50px;
 }
 header nav ul {
   display: flex;
@@ -1888,14 +1890,14 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #fff;
 }
-header .hamb {
+
+.hamb {
   display: none;
-  color: #ffffff;
 }
 
 #intro {
   padding: 40px 0;
-  margin-top: 25px;
+  margin-top: 52px;
 }
 #intro .profileImg {
   width: 100%;
@@ -2003,18 +2005,13 @@ header .hamb {
   width: 90%;
 }
 
-#whatIdo {
-  padding: 40px 0;
-  background: #f2f2f2;
-}
-
 #contactUs {
   padding: 40px 0;
 }
 #contactUs .saySomething {
   width: 100%;
   position: absolute;
-  top: 0px;
+  top: -20px;
   left: 0;
   background: #fff;
   padding: 25px;
@@ -2055,54 +2052,42 @@ header .hamb {
   color: #0b4c86;
 }
 
-.topFooter {
+footer {
   background: #4a4a4a;
-  padding: 60px 0 50px;
   position: relative;
   z-index: 2;
 }
-.topFooter .smallHeading {
+footer .smallHeading {
   font-size: 18px;
-  color: #f2f2f2;
+  color: #ffeee2;
 }
-.topFooter .socialGroup ul {
+footer .socialGroup ul {
   display: flex;
   flex-wrap: wrap;
 }
-.topFooter .socialGroup ul li {
+footer .socialGroup ul li {
   list-style: none;
   width: auto;
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   margin-right: 10px;
 }
-.topFooter .socialGroup ul li a {
+footer .socialGroup ul li a {
   color: #fff;
 }
-.topFooter .socialGroup ul li a i {
+footer .socialGroup ul li a i {
   font-size: 22px;
 }
-.topFooter .socialGroup ul li:last-child {
+footer .socialGroup ul li:last-child {
   margin-right: 0px;
 }
-.topFooter h2 {
+footer h2 {
   font-size: 30px;
-  color: #f2f2f2;
+  color: #ffeee2;
 }
-.topFooter p {
+footer p {
   color: #fff;
   font-size: 14px;
-}
-
-.topFooter::after {
-  content: "";
-  width: 35%;
-  height: 100%;
-  background: #383838;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .myInput {
@@ -2156,92 +2141,27 @@ header .hamb {
   padding: 10px;
 }
 
+.topFooter {
+  padding: 60px 0 50px;
+}
+
+.topFooter:after {
+  content: "";
+  width: 35%;
+  height: 100%;
+  background: #383838;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .bottomFooter {
   background: #2d2d2d;
   color: #969595;
   padding: 15px 0;
 }
 
-.socialGroup {
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .mt-sm-20 {
-    margin-top: 20px;
-  }
-
-  header nav {
-    position: fixed;
-    top: 53px;
-    right: -200px;
-    width: 200px;
-    background: #295975;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  header nav ul {
-    width: 100%;
-  }
-  header nav ul li {
-    flex: 0 0 100%;
-  }
-  header nav ul li a {
-    padding: 10px 20px;
-  }
-  header nav.show {
-    right: 0;
-  }
-  header .hamb {
-    display: block;
-    position: fixed;
-    top: 16px;
-    right: 20px;
-  }
-
-  .col-sm-hidden {
-    display: none;
-  }
-
-  body {
-    font-size: 14px;
-  }
-
-  #contactUs .saySomething {
-    position: static;
-  }
-
-  #aboutMe .personalInfo .resume .downloadResume {
-    padding: 8px 18px;
-    font-size: 13px;
-  }
-
-  .smallHeading {
-    margin-top: 20px;
-  }
-
-  .topFooter h2 {
-    font-size: 22px;
-  }
-
-  .topFooter::after {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  #aboutMe .personalInfo ul li:nth-child(odd) {
-    width: 94px;
-    -ms-flex: 0 0 94px;
-    flex: 0 0 94px;
-  }
-
-  #aboutMe .personalInfo ul li {
-    font-size: 12px;
-  }
-}
 /*3-modules*/
 
 /*# sourceMappingURL=app.css.map */
