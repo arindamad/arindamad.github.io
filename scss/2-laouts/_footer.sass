@@ -1,10 +1,11 @@
-footer
-  background: #4a4a4a  
+.topFooter
+  background: #4a4a4a
+  padding: 60px 0 50px
   position: relative
   z-index: 2
   .smallHeading
     font-size: 18px
-    color: #ffeee2
+    color: #f2f2f2
   .socialGroup
     ul
       display: flex
@@ -24,11 +25,20 @@ footer
       
   h2
     font-size: 30px
-    color: #ffeee2
+    color: #f2f2f2
   p
     color: #fff
     font-size: 14px  
-    
+
+.topFooter::after
+  content: ""
+  width: 35%
+  height: 100%
+  background: #383838
+  top: 0
+  left: 0
+  position: absolute
+  z-index: -1
 .myInput
   border: 1px solid #ccc
   width: 100%
@@ -60,20 +70,10 @@ footer
 .form-control
   width: 100%
   padding: 10px
-  
-.topFooter
-  padding: 60px 0 50px
-.topFooter:after
-  content: ""
-  width: 35%
-  height: 100%
-  background: #383838
-  top: 0
-  left: 0
-  position: absolute
-  z-index: -1
-  
+
 .bottomFooter
   background: #2d2d2d
   color: #969595
   padding: 15px 0
+.socialGroup
+  margin-top: 20px
