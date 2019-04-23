@@ -2330,6 +2330,17 @@ header .hamb {
   font-weight: 600;
 }
 
+.bannerImg {
+  width: 290px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bannerImg img {
+  width: 100%;
+  display: block;
+}
+
 .resourceDtls {
   padding: 60px 0;
 }
