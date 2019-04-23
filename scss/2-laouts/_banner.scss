@@ -97,13 +97,16 @@
     }
 }
 .bannerImg{
-    width: 290px;
+    width: 460px;
     position: absolute;
     bottom: 0;
     right: 0;
     img{
         width: 100%;
         display: block;
+        height: 500px;
+        object-fit: cover;
+        object-position: top;
     }
 
 }
