@@ -1859,6 +1859,10 @@ h2 {
   background: #0b4c86;
 }
 
+.relative {
+  position: relative;
+}
+
 /*2-laouts*/
 body {
   margin-top: 57.91px;
@@ -2253,12 +2257,77 @@ header .hamb {
 
 .bannerText h2 {
   font-size: 50px;
-  color: #fff;
+  color: #00adca;
 }
 
 .bannerText p {
   color: #fff;
   font-size: 20px;
+}
+
+.banner {
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.homeBanner {
+  height: 500px;
+  background: url(../images/banner/2.jpg) no-repeat center bottom;
+  z-index: 1;
+  position: relative;
+}
+.homeBanner .container {
+  height: 100%;
+}
+.homeBanner .bannerText {
+  max-width: 540px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.homeBanner .bannerText h5 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  float: left;
+  font-weight: 600;
+}
+
+.homeBanner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.heading {
+  font-size: 48px;
+  color: #eefdff;
+}
+
+.resume[role=baner-resume] {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+}
+.resume[role=baner-resume] .downloadResume {
+  height: 48px;
+  line-height: 46px;
+  display: inline-block;
+  padding: 0 30px;
+  color: #fff;
+  background: #00adca;
+  font-weight: 600;
 }
 
 .resourceDtls {
