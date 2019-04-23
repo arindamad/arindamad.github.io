@@ -1,0 +1,37 @@
+.resourceBanner{
+    height: 400px;
+    background: url(../images/banner/1.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    .container{
+        height: 100%;
+        text-align: center;
+    }
+}
+.resourceBanner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+    background: #025e73;
+    background: -moz-linear-gradient(-45deg, #025e73 1%, #023859 100%);
+    background: -webkit-linear-gradient(-45deg, #025e73 1%,#023859 100%);
+    background: linear-gradient(135deg, #025e73 1%,#023859 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#025e73', endColorstr='#023859',GradientType=1 );
+    }
+.bannerText h2{
+    font-size: 50px;
+    color: #fff;
+}
+.bannerText p{
+    color: #fff;
+    font-size: 20px;
+    
+}

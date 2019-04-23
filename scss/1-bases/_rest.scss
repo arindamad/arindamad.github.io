@@ -22,6 +22,7 @@ img, a{
     display: block;
 }
 a{
+    transition: all ease-in-out 400ms;
     text-decoration: none;
     color: inherit;
 }
