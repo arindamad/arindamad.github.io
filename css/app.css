@@ -1831,12 +1831,12 @@ h2 {
 ::-moz-selection {
   /* Code for Firefox */
   color: #ffffff;
-  background: #0b4c86;
+  background: #00adca;
 }
 
 ::selection {
   color: #ffffff;
-  background: #0b4c86;
+  background: #00adca;
 }
 
 /* scrollbar css */
@@ -1856,7 +1856,7 @@ h2 {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0b4c86;
+  background: #00adca;
 }
 
 .relative {
@@ -1997,7 +1997,7 @@ header .hamb {
 }
 #aboutMe .personalInfo .resume .downloadResume {
   padding: 8px 50px;
-  background: #0b4c86;
+  background: #00adca;
   color: #f2f2f2;
   border: 1px solid transparent;
   -webkit-transition: all 300ms ease-in-out;
@@ -2010,8 +2010,8 @@ header .hamb {
 #aboutMe .personalInfo .resume .downloadResume:hover, #aboutMe .personalInfo .resume .downloadResume:focus {
   outline: none;
   background: #f2f2f2;
-  color: #0b4c86;
-  border: 1px solid #0b4c86;
+  color: #00adca;
+  border: 1px solid #00adca;
 }
 #aboutMe .skills ul li {
   padding: 10px 0;
@@ -2032,7 +2032,7 @@ header .hamb {
   content: "";
   position: absolute;
   height: 3px;
-  background: #0b4c86;
+  background: #00adca;
   bottom: 0;
   left: 0;
   z-index: 5;
@@ -2105,7 +2105,7 @@ header .hamb {
   left: -25px;
   transform: translateY(-50%);
   text-align: center;
-  color: #0b4c86;
+  color: #00adca;
 }
 
 @media screen and (max-width: 767px) {
@@ -2173,7 +2173,7 @@ header .hamb {
 
 .sendTxt {
   padding: 0 45px;
-  background: #0b4c86;
+  background: #00adca;
   border: none;
   font-size: 16px;
   color: #fff;
