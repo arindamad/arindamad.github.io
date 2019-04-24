@@ -1957,7 +1957,6 @@ header .hamb {
 #intro .profileImg img {
   width: 100%;
   -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 #intro .myDetail h5 {
@@ -2310,11 +2309,6 @@ header .hamb {
   background: rgba(0, 0, 0, 0.65);
 }
 
-.heading {
-  font-size: 48px;
-  color: #eefdff;
-}
-
 .resume[role=baner-resume] {
   width: 100%;
   float: left;
@@ -2353,22 +2347,23 @@ header .hamb {
   float: left;
 }
 .heading h2 {
-  font-size: 34px;
+  font-size: 38px;
   text-align: center;
   position: relative;
-  color: #025e73;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+  color: #00adca;
+  padding-bottom: 14px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .heading h2::after {
   content: "";
-  width: 200px;
-  height: 2px;
+  width: 50px;
+  height: 3px;
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0);
-  background: #025e73;
+  background: #00adca;
 }
 
 .applications h3 {

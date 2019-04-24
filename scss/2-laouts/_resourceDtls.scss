@@ -5,21 +5,22 @@
     width: 100%;
     float: left;
     h2{
-        font-size: 34px;
+        font-size: 38px;
         text-align: center;
         position: relative;
-        color: #025e73;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
+        color: $mc;
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
         &::after{
             content: "";
-            width: 200px;
-            height: 2px;
+            width: 50px;
+            height: 3px;
             position: absolute;
             bottom: 0px;
             left: 50%;
             transform: translate(-50%, 0);
-            background: #025e73;
+            background: $mc;
         }
     }
 }
