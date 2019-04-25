@@ -1859,6 +1859,11 @@ h2 {
   background: #00adca;
 }
 
+body {
+  scrollbar-color: red;
+  scrollbar-width: thin;
+}
+
 .relative {
   position: relative;
 }
@@ -2065,15 +2070,12 @@ header .hamb {
 }
 #contactUs .saySomething {
   width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0;
   background: #fff;
   padding: 25px;
   -moz-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  float: left;
 }
 #contactUs .saySomething h2 {
   text-transform: uppercase;
@@ -2114,14 +2116,22 @@ header .hamb {
   }
 }
 .topFooter {
-  background: #4a4a4a;
+  background: #004d5a;
   padding: 60px 0 50px;
   position: relative;
   z-index: 2;
 }
+.topFooter .logo {
+  width: 100px;
+}
+.topFooter .logo img {
+  width: 100%;
+}
 .topFooter .smallHeading {
-  font-size: 18px;
-  color: #f2f2f2;
+  font-size: 22px;
+  color: #8ec8d2;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
 .topFooter .socialGroup ul {
   display: flex;
@@ -2145,22 +2155,22 @@ header .hamb {
 }
 .topFooter h2 {
   font-size: 30px;
-  color: #f2f2f2;
+  color: #99bfc5;
 }
 .topFooter p {
-  color: #fff;
+  color: #769ea5;
   font-size: 14px;
 }
 
-.topFooter::after {
-  content: "";
-  width: 35%;
-  height: 100%;
-  background: #383838;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
+.footerList li {
+  width: 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+.footerList li a {
+  color: #769ea5;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .myInput {
@@ -2215,8 +2225,8 @@ header .hamb {
 }
 
 .bottomFooter {
-  background: #2d2d2d;
-  color: #969595;
+  background: #002c33;
+  color: #5d878e;
   padding: 15px 0;
 }
 
