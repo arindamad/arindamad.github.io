@@ -177,18 +177,20 @@
               <div class="saySomething">
                  <div class="heading">
                    <h2>say Something</h2>
-                   <div class="form-group">
-                     <input id="visitor_name" type="text" placeholder="Your Name" class="form-control myInput">
-                   </div>
-                   <div class="form-group">
-                     <input id="visitor_email" type="text" placeholder="Your Name" class="form-control myInput">
-                   </div>
-                   <div class="form-group">
-                     <textarea id="visitor_msg" type="text" placeholder="Your Name" class="form-control textArea"></textarea>
-                   </div>
-                   <div class="text-center">
-                     <button class="sendTxt" id="submitMsg">Send</button>
-                   </div>
+                   <form  id="myForm">
+                        <div class="form-group">
+                            <input id="visitor_name" required type="text" placeholder="Name" class="form-control myInput">
+                        </div>
+                        <div class="form-group">
+                            <input id="visitor_email" required type="email" placeholder="Email Id" class="form-control myInput">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="visitor_msg" required type="text" placeholder="Say Something" class="form-control textArea"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="sendTxt" id="submitMsg" type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
               </div>
             </div>
@@ -225,7 +227,7 @@
                             <li><a href="https://www.facebook.com/arindamthecool/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="https://twitter.com/Arindam56199145" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="https://github.com/arindamad" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/arindam-sarkar-224779149/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/arindamad/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.instagram.com/arindamad1996/" target="_blank"><i class="fa fa-instragram" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.instagram.com/arindamad1996/" target="_blank"><i class="fa fa-stac-overflow" aria-hidden="true"></i></a></li>
                             </ul>
@@ -244,9 +246,23 @@
             </div>
         </div>  
       </footer>
+
+      <div class="alert" style="display: none">
+          <div class="msgCont">
+              <span class="chIcon"><i class="fa fa-check"></i></span>
+              <h2>Thank you</h2>
+              <p>I will contact you soon.</p>
+
+          </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase.js"></script>
+      <!-- <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> -->
+
+      <!-- <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script> -->
       <script src="js/jquery.min.js"></script>
-      <script src="js/myjs.js"></script>
-      <script type="text/javascript">
+      <!-- <script src="js/myjs.js"></script> -->
+      <script src="js/form.js"></script>
+      <!-- <script type="text/javascript">
         var scroll = $(document).scrollTop();
        // console.log(scroll);
        if(scroll<=150){
@@ -256,9 +272,17 @@
        }
       </script>
       <script>
-          $('.hamb').on('click', function(){
+          $('.hamb').on('click', function(e){
+  
               $('header nav').toggleClass('show');
           });
-      </script>
+      </script> -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+        
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        
 </body>
 </html>
