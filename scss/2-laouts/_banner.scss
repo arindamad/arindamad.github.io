@@ -57,6 +57,7 @@
         -webkit-transform: translateY(-50%);
         -moz-transform: translateY(-50%);
         transform: translateY(-50%);
+        padding: 0 15px;
         h5{
             font-size: 16px;
             color: #fff;
@@ -107,3 +108,28 @@
     }
 
 }
+
+@media screen and (max-width: 1024px) {
+    .bannerImg{
+        width: 270px;        
+        img{
+            height: 296px;
+        }    
+    }
+    .homeBanner{
+        height: 300px;
+    }
+    .bannerText h2{
+        font-size: 30px;
+    }
+    .homeBanner .bannerText h5{
+        font-size: 14px;
+    }
+    .resume[role=baner-resume] .downloadResume{
+        height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    padding: 0 22px;
+        font-size: 14px;
+    }
+  }
