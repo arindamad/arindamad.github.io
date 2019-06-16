@@ -1898,13 +1898,13 @@ header nav ul li {
   width: auto;
   flex: 0 0 auto;
   -ms-flex: 0 0 auto;
-  color: #f2f2f2;
+  color: #001d22;
 }
 header nav ul li a {
   padding: 0 15px;
   height: 37px;
   line-height: 37px;
-  font-weight: 500;
+  font-weight: 600;
 }
 header nav ul li a:hover {
   color: #fff;
@@ -1920,13 +1920,16 @@ header .hamb {
     top: 58.91px;
     right: -200px;
     width: 200px;
-    background: #295975;
+    background: #fff;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -ms-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     height: calc(100vh - 58.91px);
+    -moz-box-shadow: "0, 0 , 10px rgba(0,0,0,.2)";
+    -webkit-box-shadow: "0, 0 , 10px rgba(0,0,0,.2)";
+    box-shadow: "0, 0 , 10px rgba(0,0,0,.2)";
   }
 
   header .hamb {
@@ -1957,8 +1960,9 @@ header .hamb {
   margin-top: 25px;
 }
 #intro .profileImg {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  float: right;
+  margin: 0 0 30px 30px;
 }
 #intro .profileImg img {
   width: 100%;
@@ -1974,6 +1978,7 @@ header .hamb {
 #intro .myDetail p {
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 #aboutMe {
@@ -2094,20 +2099,30 @@ header .hamb {
   color: #3c3c3c;
 }
 .getInTouch .address {
-  margin-left: 30px;
+  margin: 20px 0 0;
 }
 .getInTouch .address li {
   list-style: none;
   position: relative;
-  padding: 8px 0;
+  padding: 10px 0 10px 50px;
+}
+.getInTouch .address li + li {
+  margin-top: 15px;
 }
 .getInTouch .address li i {
   position: absolute;
   top: 50%;
-  left: -25px;
+  left: 0;
   transform: translateY(-50%);
   text-align: center;
-  color: #00adca;
+  background: #00adca;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {
@@ -2124,6 +2139,7 @@ header .hamb {
 }
 .topFooter .logo {
   width: 100px;
+  margin-bottom: 15px;
 }
 .topFooter .logo img {
   width: 100%;
@@ -2137,6 +2153,7 @@ header .hamb {
 .topFooter .socialGroup ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .topFooter .socialGroup ul li {
   list-style: none;

@@ -11,3 +11,9 @@
     transition: all $tan ease-in-out;
     
 }
+@mixin rad($rad) {
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+    border-radius: $rad;
+    
+}

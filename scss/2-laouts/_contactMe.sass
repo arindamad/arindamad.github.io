@@ -22,18 +22,25 @@
     font-size: 14px
     color: $dBlack
   .address
-    margin-left: 30px    
+    margin: 20px 0 0    
     li
       list-style: none
       position: relative
-      padding: 8px 0
+      padding: 10px 0 10px 50px 
+      &+li
+        margin-top: 15px
       i
         position: absolute
         top: 50%  
-        left: -25px
+        left: 0
         transform: translateY(-50%)
         text-align: center
-        color: $mc
+        background: $mc
+        color: #fff
+        height: 40px
+        width: 40px
+        line-height: 40px
+        +rad(50%)
 
 @media screen and (max-width: 767px)
   #contactUs .saySomething 
