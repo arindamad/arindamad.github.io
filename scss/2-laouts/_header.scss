@@ -59,7 +59,7 @@ header{
         -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;
         height: calc(100vh - 58.91px);
-        @include boxShadow(0, 0 ,5px rgba(0,0,0,.2));
+        // @include boxShadow(0, 0 ,5px rgba(0,0,0,.2));
     }
     header .hamb {
         display: block;

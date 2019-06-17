@@ -1927,9 +1927,6 @@ header .hamb {
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     height: calc(100vh - 58.91px);
-    -moz-box-shadow: "0, 0 , 10px rgba(0,0,0,.2)";
-    -webkit-box-shadow: "0, 0 , 10px rgba(0,0,0,.2)";
-    box-shadow: "0, 0 , 10px rgba(0,0,0,.2)";
   }
 
   header .hamb {
@@ -1956,8 +1953,28 @@ header .hamb {
   }
 }
 #intro {
-  padding: 40px 0;
-  margin-top: 25px;
+  padding: 60px 0;
+  background: url(../images/back.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+#intro:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.2);
+  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(65%, white), color-stop(100%, white));
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
+  background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
+  background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1 );
 }
 #intro .profileImg {
   width: 300px;
@@ -1970,19 +1987,24 @@ header .hamb {
   filter: grayscale(100%);
 }
 #intro .myDetail h5 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #666;
+  font-size: 18px;
+  line-height: 26px;
 }
 #intro .myDetail p {
   font-size: 14px;
-  margin-bottom: 10px;
   text-align: justify;
+  line-height: 27px;
+}
+#intro .myDetail p + p {
+  margin-top: 10px;
 }
 
 #aboutMe {
-  padding-bottom: 40px;
+  padding: 60px 0;
 }
 #aboutMe .personalInfo ul {
   display: flex;
@@ -2357,9 +2379,8 @@ header .hamb {
   padding: 0 15px;
 }
 .homeBanner .bannerText h5 {
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
-  letter-spacing: 2px;
   line-height: 1.6;
   float: left;
   font-weight: 600;
