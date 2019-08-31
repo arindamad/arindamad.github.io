@@ -44,8 +44,11 @@
 .homeBanner{
     height: 500px;
     background: url(../images/banner/2.jpg) no-repeat center bottom;
-    z-index: 1;
+    z-index: 2;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     .container{
         height: 100%;
     }

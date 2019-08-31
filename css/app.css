@@ -2017,8 +2017,8 @@ header .hamb {
   }
 }
 #intro {
-  padding: 60px 0;
-  background: url(../images/back.jpg) no-repeat center center;
+  padding: 100px 0 60px;
+  margin-top: -90px;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -2437,8 +2437,11 @@ header .hamb {
 .homeBanner {
   height: 500px;
   background: url(../images/banner/2.jpg) no-repeat center bottom;
-  z-index: 1;
+  z-index: 2;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .homeBanner .container {
   height: 100%;
