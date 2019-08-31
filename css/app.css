@@ -2088,7 +2088,7 @@ header .hamb {
 
 svg circle {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1s linear;
+  transition: stroke-dashoffset 1.5s linear;
   stroke: rgba(255, 255, 255, 0.2);
   stroke-width: 0.75em;
   transform-origin: 50%;

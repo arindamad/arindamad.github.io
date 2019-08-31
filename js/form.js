@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 // Reference messages collection
 // var messagesRef = firebase.database().ref('messages');
 
-console.log(firebase);
+// console.log(firebase);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');

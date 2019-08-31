@@ -45,27 +45,55 @@ $('.eachBody').height($('.eachBody').width());
 
 $(document).ready(function(){ 
   function loadSvg(){ 
-  var val = "";
-  $(".eachBody").each(function(index){
-   
-    val = parseInt($(this).attr('data-pct'));
-   
-    var $circle = $('svg').eq(index).find('circle').eq(1);
-   
-     var r = $circle.attr('r'); 
-    var c = Math.PI*(r*2);
-    console.log(c);
-    $('.lastCircle').eq(index).attr('stroke-dasharray', c);
-    console.log($circle);
-    if (val < 0) { val = 0;}
-    if (val > 100) { val = 100;}
+    var val = "";
+    $(".eachBody").each(function(index){
     
-    var pct = ((100-val)/100)*c; 
+      val = parseInt($(this).attr('data-pct'));
     
-    $circle.css({ strokeDashoffset: pct});
-  });  
+      var $circle = $('svg').eq(index).find('circle').eq(1);
+    
+      var r = $circle.attr('r'); 
+      var c = Math.PI*(r*2);
+      // console.log(c);
+      $('.lastCircle').eq(index).attr('stroke-dasharray', c);
+      // console.log($circle);
+      if (val < 0) { val = 0;}
+      if (val > 100) { val = 100;}
+      
+      var pct = ((100-val)/100)*c; 
+      
+      $circle.css({ strokeDashoffset: pct});
+
+
+      //for visible code 
+      var winHeight = $(window).height();
+      var skill =$("#skills");
+      var skillOffset = skill.offset().top;
+      var skillHeight = skill.height();
+      var animatedDone = true;
+      console.log(skill);
+      $(window).on('scroll', function(e){
+        var scrollTopar =$(this).scrollTop();
+        
+        if((skillOffset - winHeight)<scrollTopar && (skillOffset + skillHeight)>scrollTopar){
+          console.log("visible");
+          if(animatedDone != false){
+             $circle.css({ strokeDashoffset: pct});
+
+             animatedDone = false;
+          }
+        }else{
+          console.log("hidden");
+          $circle.css({ strokeDashoffset: c});
+          animatedDone = true;
+        }
+        
+      });
+
+      
+    });  
    }
-  setTimeout(loadSvg(), 10000);
+  loadSvg();
 });
   
 
