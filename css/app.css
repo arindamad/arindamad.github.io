@@ -2017,8 +2017,7 @@ header .hamb {
   }
 }
 #intro {
-  padding: 100px 0 60px;
-  margin-top: -90px;
+  padding: 40px 0 60px;
   background-size: cover;
   position: relative;
   z-index: 1;
