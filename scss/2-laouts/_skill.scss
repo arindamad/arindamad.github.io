@@ -1,5 +1,5 @@
 #skills{
-    padding: 40px 0;
+    padding: 40px 0 0;
     background: url(../images/skills.jpg) fixed #002c33;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -16,6 +16,10 @@
         left: 0;
         z-index: -1;
     }
+
+    .col-lg-2{
+      margin-bottom: 30px;
+    }
 }
 svg circle{
     stroke-dashoffset: 0;
@@ -30,7 +34,7 @@ svg circle{
   }
   .eachBody {
     position: relative;  
-    
+    text-align: center;    
     &:after {
         position: absolute;
         left: 50%;

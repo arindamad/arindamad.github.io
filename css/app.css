@@ -1966,7 +1966,6 @@ header nav ul li {
 }
 header nav ul li a {
   padding: 0 15px;
-  height: 37px;
   line-height: 37px;
   font-weight: 600;
 }
@@ -1975,7 +1974,18 @@ header nav ul li a:hover {
 }
 header .hamb {
   display: none;
-  color: #ffffff;
+  width: 40px;
+  height: 18px;
+}
+header .hamb span {
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin-bottom: 6px;
+}
+header .hamb span :last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1984,7 +1994,7 @@ header .hamb {
     top: 58.91px;
     right: -200px;
     width: 200px;
-    background: #fff;
+    background: #002c33;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -ms-transition: all 300ms ease-in-out;
@@ -2010,10 +2020,13 @@ header .hamb {
 
   header nav ul li {
     flex: 0 0 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   header nav ul li a {
     padding: 0 20px;
+    color: #87b0b7;
+    line-height: 42px;
   }
 }
 #intro {
@@ -2067,7 +2080,7 @@ header .hamb {
 }
 
 #skills {
-  padding: 40px 0;
+  padding: 40px 0 0;
   background: url(../images/skills.jpg) fixed #002c33;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -2085,6 +2098,9 @@ header .hamb {
   left: 0;
   z-index: -1;
 }
+#skills .col-lg-2 {
+  margin-bottom: 30px;
+}
 
 svg circle {
   stroke-dashoffset: 0;
@@ -2100,6 +2116,7 @@ svg circle:last-child {
 
 .eachBody {
   position: relative;
+  text-align: center;
 }
 .eachBody:after {
   position: absolute;

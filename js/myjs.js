@@ -41,38 +41,31 @@
 //     }
 // }
 
-$('.eachBody').height($('.eachBody').width());
-
 $(document).ready(function(){ 
   function loadSvg(){ 
     var val = "";
-    $(".eachBody").each(function(index){
-    
-      val = parseInt($(this).attr('data-pct'));
-    
-      var $circle = $('svg').eq(index).find('circle').eq(1);
-    
+    $(".eachBody").each(function(index){    
+      val = parseInt($(this).attr('data-pct'));    
+      var $circle = $('svg').eq(index).find('circle').eq(1);    
       var r = $circle.attr('r'); 
       var c = Math.PI*(r*2);
       // console.log(c);
       $('.lastCircle').eq(index).attr('stroke-dasharray', c);
       // console.log($circle);
       if (val < 0) { val = 0;}
-      if (val > 100) { val = 100;}
-      
-      var pct = ((100-val)/100)*c; 
-      
+      if (val > 100) { val = 100;}      
+      var pct = ((100-val)/100)*c;       
       $circle.css({ strokeDashoffset: pct});
 
-
       //for visible code 
-      var winHeight = $(window).height();
-      var skill =$("#skills");
-      var skillOffset = skill.offset().top;
-      var skillHeight = skill.height();
+      
       var animatedDone = true;
-      console.log(skill);
       $(window).on('scroll', function(e){
+        var winHeight = $(window).height();
+        var skill =$("#skills");
+        var skillOffset = skill.offset().top;
+        var skillHeight = skill.height();
+
         var scrollTopar =$(this).scrollTop();
         
         if((skillOffset - winHeight)<scrollTopar && (skillOffset + skillHeight)>scrollTopar){
