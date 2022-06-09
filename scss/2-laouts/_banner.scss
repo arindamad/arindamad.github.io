@@ -6,35 +6,42 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+  
     .container{
         height: 100%;
         text-align: center;
     }
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.7;
+        background: #025e73;
+        background: -moz-linear-gradient(-45deg, #025e73 1%, #023859 100%);
+        background: -webkit-linear-gradient(-45deg, #025e73 1%,#023859 100%);
+        background: linear-gradient(135deg, #025e73 1%,#023859 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#025e73', endColorstr='#023859',GradientType=1 );
+        }
 }
-.resourceBanner::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0.7;
-    background: #025e73;
-    background: -moz-linear-gradient(-45deg, #025e73 1%, #023859 100%);
-    background: -webkit-linear-gradient(-45deg, #025e73 1%,#023859 100%);
-    background: linear-gradient(135deg, #025e73 1%,#023859 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#025e73', endColorstr='#023859',GradientType=1 );
+
+.bannerText{
+    h1{
+        font-size: 70px;
+        color: #110943;
+        font-weight: 800;
+        margin-bottom: 20px;
     }
-.bannerText h2{
-    font-size: 50px;
-    color: #00adca;
+    p{
+        color: #fff;
+        font-size: 20px;
+        
+    }
 }
-.bannerText p{
-    color: #fff;
-    font-size: 20px;
-    
-}
+
 .banner{
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -42,13 +49,10 @@
     background-size: cover;
 }
 .homeBanner{
-    height: 500px;
-    background: url(../images/banner/2.jpg) no-repeat center bottom;
+    height: calc(100vh - 58px);   
     z-index: 2;
-    position: relative;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative; 
+    overflow: hidden;
     .container{
         height: 100%;
     }
@@ -61,53 +65,51 @@
         -moz-transform: translateY(-50%);
         transform: translateY(-50%);
         padding: 0 15px;
-        h5{
-            font-size: 20px;
-            color: #fff;
-            // letter-spacing: 2px;
+        h5{           
+            font-size: 16px;
+            color: #110943;
             line-height: 1.6;
             float: left;
             font-weight: 600;
         }
     }
 }
-.homeBanner::after{
-    content: '';
-    width: 100%;
-    height: 100%;
+.homeBanner::after {
+    content: "";
+    width: 800px;
+    height: 800px;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;    
-    background: rgba(0, 0, 0, 0.65);   
-    }
+    top: 40px;
+    right: -230px;
+    z-index: -1;
+    background: #7462e1;
+    border-radius: 50%;
+}
     
 .resume[role="baner-resume"]{
     width: 100%;
     float: left;
     margin-top: 40px;
-    .downloadResume{
-        // border: 2px solid #fff;
-        height: 48px;
-        line-height: 46px;
+    .downloadResume{       
+        height: 52px;
+        line-height: 52px;
         display: inline-block;
         padding: 0 30px;
         color: #fff;
-        background: #00adca;
+        background: #7462e1;
         font-weight: 600;
+        border-radius: 30px;        
     }
 }
 .bannerImg{
-    width: 460px;
+    width: 400px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
     img{
         width: 100%;
-        display: block;
-        height: 500px;
-        object-fit: cover;
-        object-position: top;
+        display: block;       
     }
 
 }

@@ -2,13 +2,13 @@ body{
     margin-top: 57.91px;
 }
 header{
-    background: #00adca;
     padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999999; 
+    background: #fff;
     .logo{
         font-size: 26px;
         color: #ffffff;
@@ -21,8 +21,7 @@ header{
     nav{
         ul{
             display: flex;
-            flex-wrap: wrap;
-            // justify-content: space-between; 
+            flex-wrap: wrap;           
             li{
                 width: auto;
                 flex:  0 0 auto;
@@ -32,6 +31,7 @@ header{
                     padding:0 15px; 
                     line-height: 37px;
                     font-weight: 600;
+                    color: #110943;
                 }
                 a:hover{
                     color: $headerTxt;  

@@ -29,8 +29,16 @@ function submitForm(e){
   var email = getInputVal('visitor_email');
   var msg = getInputVal('visitor_msg');
 
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+  
+  today = dd + '/' +  mm + '/' + yyyy;
+
+
   // Save message
-  saveMessage(name, email, msg);
+  saveMessage(name, email, msg, today);
 
   // Show alert
   // document.querySelector('.alert').style.display = 'block';
@@ -53,12 +61,14 @@ function getInputVal(id){
   return document.getElementById(id).value;
 }
 
+
 // Save message to firebase
-function saveMessage(name, email, msg){
+function saveMessage(name, email, msg, timestamp){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
     email:email,
-    msg:msg
+    msg:msg,
+    timestamp: timestamp,
   });
 }

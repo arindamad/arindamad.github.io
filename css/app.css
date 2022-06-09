@@ -1790,70 +1790,6 @@ html {
     align-self: stretch !important;
   }
 }
-.parentElement {
-  width: 100%;
-  display: flex;
-  background: #333;
-  min-height: 100px;
-  border: 5px solid salmon;
-  padding: 10px;
-}
-
-.eachElement {
-  width: 100px;
-  background: #fff;
-}
-
-.eachElement + .eachElement {
-  margin-left: 20px;
-}
-
-[class*=".element"] {
-  float: left;
-}
-
-.element1 {
-  height: 10px;
-}
-
-.element2 {
-  height: 100px;
-}
-
-.element3 {
-  height: 200px;
-}
-
-.element4 {
-  height: 200px;
-}
-
-.element5 {
-  height: 50px;
-}
-
-.generatePop {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  z-index: 9999999;
-}
-
-.popContent {
-  max-width: 700px;
-  width: 100%;
-  background: #fff;
-  margin: 100px auto;
-  padding: 15px;
-}
-
-.overH {
-  overflow: hidden;
-}
-
 /*1-bases*/
 /*rest css*/
 * {
@@ -1895,12 +1831,12 @@ h2 {
 ::-moz-selection {
   /* Code for Firefox */
   color: #ffffff;
-  background: #00adca;
+  background: #7462e1;
 }
 
 ::selection {
   color: #ffffff;
-  background: #00adca;
+  background: #7462e1;
 }
 
 /* scrollbar css */
@@ -1920,7 +1856,7 @@ h2 {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00adca;
+  background: #7462e1;
 }
 
 body {
@@ -1938,13 +1874,13 @@ body {
 }
 
 header {
-  background: #00adca;
   padding: 10px 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999999;
+  background: #fff;
 }
 header .logo {
   font-size: 26px;
@@ -1968,6 +1904,7 @@ header nav ul li a {
   padding: 0 15px;
   line-height: 37px;
   font-weight: 600;
+  color: #110943;
 }
 header nav ul li a:hover {
   color: #fff;
@@ -2030,37 +1967,11 @@ header .hamb span :last-child {
   }
 }
 #intro {
-  padding: 40px 0 60px;
+  padding: 80px 0;
   background-size: cover;
   position: relative;
   z-index: 1;
-}
-#intro:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: rgba(255, 255, 255, 0.2);
-  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(65%, white), color-stop(100%, white));
-  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
-  background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
-  background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, white 65%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1 );
-}
-#intro .profileImg {
-  width: 300px;
-  float: right;
-  margin: 0 0 30px 30px;
-}
-#intro .profileImg img {
-  width: 100%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  background: #f2f2f2;
 }
 #intro .myDetail h5 {
   margin-bottom: 20px;
@@ -2111,7 +2022,7 @@ svg circle {
 }
 
 svg circle:last-child {
-  stroke: #00adca;
+  stroke: #7462e1;
 }
 
 .eachBody {
@@ -2162,7 +2073,7 @@ svg circle:last-child {
 }
 
 #contactUs {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 #contactUs .saySomething {
   width: 100%;
@@ -2173,11 +2084,6 @@ svg circle:last-child {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   float: left;
 }
-#contactUs .saySomething h2 {
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #3c3c3c;
-}
 
 .getInTouch h2 {
   text-transform: uppercase;
@@ -2185,8 +2091,9 @@ svg circle:last-child {
   color: #3c3c3c;
 }
 .getInTouch p {
-  font-size: 14px;
+  font-size: 16px;
   color: #3c3c3c;
+  line-height: 30px;
 }
 .getInTouch .address {
   margin: 20px 0 0;
@@ -2205,7 +2112,7 @@ svg circle:last-child {
   left: 0;
   transform: translateY(-50%);
   text-align: center;
-  background: #00adca;
+  background: #7462e1;
   color: #fff;
   height: 40px;
   width: 40px;
@@ -2222,40 +2129,46 @@ svg circle:last-child {
   }
 }
 .topFooter {
-  background: #004d5a;
-  padding: 60px 0 50px;
+  background: #f2f2f2;
+  padding: 80px 0;
   position: relative;
   z-index: 2;
   margin-top: 50px;
 }
+
 .topFooter::after {
   content: "";
   width: 100%;
-  height: 50px;
+  height: 80px;
   position: absolute;
-  top: -47px;
+  top: -80px;
   left: 0;
-  background: url(../images/footer-landscape.png) center bottom repeat-x;
+  background: url(../images/footer-landscape-white.png) center bottom repeat-x;
   background-size: contain;
 }
+
 .topFooter .logo {
   width: 100px;
   margin-bottom: 15px;
 }
+
 .topFooter .logo img {
   width: 100%;
 }
+
 .topFooter .smallHeading {
   font-size: 22px;
-  color: #8ec8d2;
+  color: #7462e1;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
+
 .topFooter .socialGroup ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .topFooter .socialGroup ul li {
   list-style: none;
   width: auto;
@@ -2263,22 +2176,28 @@ svg circle:last-child {
   -ms-flex: 0 0 auto;
   margin-right: 10px;
 }
+
 .topFooter .socialGroup ul li a {
-  color: #fff;
+  color: #ffffffa1;
 }
+
 .topFooter .socialGroup ul li a i {
   font-size: 22px;
 }
+
 .topFooter .socialGroup ul li:last-child {
   margin-right: 0px;
 }
+
 .topFooter h2 {
   font-size: 30px;
   color: #99bfc5;
 }
+
 .topFooter p {
-  color: #769ea5;
-  font-size: 14px;
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .footerList li {
@@ -2286,9 +2205,9 @@ svg circle:last-child {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
+
 .footerList li a {
-  color: #769ea5;
-  font-weight: 500;
+  color: #333;
   line-height: 28px;
 }
 
@@ -2296,16 +2215,17 @@ svg circle:last-child {
   border: 1px solid #ccc;
   width: 100%;
   font-size: 14px;
-  height: 40px;
+  height: 50px;
 }
 
 .sendTxt {
   padding: 0 45px;
-  background: #00adca;
+  background: #7462e1;
   border: none;
   font-size: 16px;
   color: #fff;
-  height: 40px;
+  height: 50px;
+  border-radius: 30px;
 }
 
 .myInput:focus {
@@ -2344,9 +2264,9 @@ svg circle:last-child {
 }
 
 .bottomFooter {
-  background: #002c33;
-  color: #5d878e;
-  padding: 15px 0;
+  background: #110943;
+  color: rgba(255, 255, 255, 0.77);
+  padding: 15px 0px;
 }
 
 .socialGroup {
@@ -2362,6 +2282,7 @@ svg circle:last-child {
   top: 0;
   left: 0;
 }
+
 .alert .msgCont {
   max-width: 400px;
   width: 100%;
@@ -2370,6 +2291,7 @@ svg circle:last-child {
   text-align: center;
   padding: 20px;
 }
+
 .alert .msgCont .chIcon {
   color: green;
   font-size: 40px;
@@ -2381,10 +2303,12 @@ svg circle:last-child {
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .alert .msgCont:before {
   content: "";
   display: table;
 }
+
 .alert .msgCont:after {
   content: "";
   display: table;
@@ -2404,7 +2328,6 @@ svg circle:last-child {
   height: 100%;
   text-align: center;
 }
-
 .resourceBanner::after {
   content: "";
   width: 100%;
@@ -2421,11 +2344,12 @@ svg circle:last-child {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#025e73", endColorstr="#023859",GradientType=1 );
 }
 
-.bannerText h2 {
-  font-size: 50px;
-  color: #00adca;
+.bannerText h1 {
+  font-size: 70px;
+  color: #110943;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
-
 .bannerText p {
   color: #fff;
   font-size: 20px;
@@ -2439,13 +2363,10 @@ svg circle:last-child {
 }
 
 .homeBanner {
-  height: 500px;
-  background: url(../images/banner/2.jpg) no-repeat center bottom;
+  height: calc(100vh - 58px);
   z-index: 2;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  -moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  overflow: hidden;
 }
 .homeBanner .container {
   height: 100%;
@@ -2461,8 +2382,8 @@ svg circle:last-child {
   padding: 0 15px;
 }
 .homeBanner .bannerText h5 {
-  font-size: 20px;
-  color: #fff;
+  font-size: 16px;
+  color: #110943;
   line-height: 1.6;
   float: left;
   font-weight: 600;
@@ -2470,13 +2391,14 @@ svg circle:last-child {
 
 .homeBanner::after {
   content: "";
-  width: 100%;
-  height: 100%;
+  width: 800px;
+  height: 800px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40px;
+  right: -230px;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.65);
+  background: #7462e1;
+  border-radius: 50%;
 }
 
 .resume[role=baner-resume] {
@@ -2485,27 +2407,26 @@ svg circle:last-child {
   margin-top: 40px;
 }
 .resume[role=baner-resume] .downloadResume {
-  height: 48px;
-  line-height: 46px;
+  height: 52px;
+  line-height: 52px;
   display: inline-block;
   padding: 0 30px;
   color: #fff;
-  background: #00adca;
+  background: #7462e1;
   font-weight: 600;
+  border-radius: 30px;
 }
 
 .bannerImg {
-  width: 460px;
+  width: 400px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
 }
 .bannerImg img {
   width: 100%;
   display: block;
-  height: 500px;
-  object-fit: cover;
-  object-position: top;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2542,13 +2463,12 @@ svg circle:last-child {
 
 .heading {
   width: 100%;
-  float: left;
 }
 .heading h2 {
   font-size: 38px;
   text-align: center;
   position: relative;
-  color: #00adca;
+  color: #7462e1;
   padding-bottom: 14px;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -2561,7 +2481,7 @@ svg circle:last-child {
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 0);
-  background: #00adca;
+  background: #7462e1;
 }
 
 .applications h3 {
