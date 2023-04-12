@@ -3,13 +3,15 @@
 }
 .heading{
     width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
     h2{
         font-size: 38px;
         text-align: center;
         position: relative;
         color: $mc;
         padding-bottom: 14px;
-        margin-bottom: 40px;
+        
         text-transform: uppercase;
         &::after{
             content: "";

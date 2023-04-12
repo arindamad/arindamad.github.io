@@ -1907,7 +1907,7 @@ header nav ul li a {
   color: #110943;
 }
 header nav ul li a:hover {
-  color: #fff;
+  color: #7462e1;
 }
 header .hamb {
   display: none;
@@ -1971,18 +1971,17 @@ header .hamb span :last-child {
   background-size: cover;
   position: relative;
   z-index: 1;
-  background: #f2f2f2;
+  background: #fff;
 }
 #intro .myDetail h5 {
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 2px;
   color: #666;
   font-size: 18px;
   line-height: 26px;
 }
 #intro .myDetail p {
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
   line-height: 27px;
 }
@@ -2051,6 +2050,8 @@ svg circle:last-child {
   margin-bottom: 5px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 #whatIdo {
@@ -2178,7 +2179,7 @@ svg circle:last-child {
 }
 
 .topFooter .socialGroup ul li a {
-  color: #ffffffa1;
+  color: #7462e1;
 }
 
 .topFooter .socialGroup ul li a i {
@@ -2344,11 +2345,21 @@ svg circle:last-child {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#025e73", endColorstr="#023859",GradientType=1 );
 }
 
+.bannerText .topText {
+  color: #110943;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 .bannerText h1 {
-  font-size: 70px;
+  font-size: 50px;
   color: #110943;
   font-weight: 800;
   margin-bottom: 20px;
+}
+.bannerText h1 span {
+  color: #7462e1;
+  border-bottom: 3px solid #7462e1;
 }
 .bannerText p {
   color: #fff;
@@ -2372,7 +2383,7 @@ svg circle:last-child {
   height: 100%;
 }
 .homeBanner .bannerText {
-  max-width: 540px;
+  max-width: 600px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -2386,19 +2397,30 @@ svg circle:last-child {
   color: #110943;
   line-height: 1.6;
   float: left;
-  font-weight: 600;
+  font-weight: 500;
 }
 
+.homeBanner::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: -40vh;
+  z-index: -1;
+  border-radius: 50%;
+  border: 90px solid #eeeeee;
+}
 .homeBanner::after {
   content: "";
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   position: absolute;
-  top: 40px;
-  right: -230px;
+  top: 30vh;
+  right: -40vh;
   z-index: -1;
-  background: #7462e1;
   border-radius: 50%;
+  border: 90px solid #7462e1;
 }
 
 .resume[role=baner-resume] {
@@ -2424,9 +2446,21 @@ svg circle:last-child {
   transform: translateY(-50%);
   right: 100px;
 }
+.bannerImg::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 50%;
+  border: 20px solid #F0BA60;
+}
 .bannerImg img {
   width: 100%;
   display: block;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2463,6 +2497,8 @@ svg circle:last-child {
 
 .heading {
   width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .heading h2 {
   font-size: 38px;
@@ -2470,7 +2506,6 @@ svg circle:last-child {
   position: relative;
   color: #7462e1;
   padding-bottom: 14px;
-  margin-bottom: 40px;
   text-transform: uppercase;
 }
 .heading h2::after {
@@ -2526,6 +2561,79 @@ svg circle:last-child {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background: #fff;
   margin-bottom: 20px;
+}
+
+.services {
+  padding: 60px 0;
+  background: #f2f2f2;
+}
+
+.services .service-item {
+  padding: 40px;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.services .service-item .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.services .service-item .icon i {
+  color: var(--color-default);
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 50px;
+  z-index: 1;
+  top: 10px;
+  right: -20px;
+  transition: 0.3s;
+  mix-blend-mode: multiply;
+}
+
+.services .service-item h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid #eeeeee;
+  transition: 0.3s;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+  color: var(--color-primary);
+}
+
+.services .service-item:hover .icon:before {
+  background: #7462e1;
+}
+
+.services .service-item:hover h3 {
+  border-color: var(--color-primary);
 }
 
 /*3-modules*/

@@ -29,11 +29,21 @@
 }
 
 .bannerText{
+    .topText{
+        color: #110943;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
     h1{
-        font-size: 70px;
+        font-size: 50px;
         color: #110943;
         font-weight: 800;
         margin-bottom: 20px;
+        span{
+            color: #7462e1;
+            border-bottom: 3px solid #7462e1;
+        }
     }
     p{
         color: #fff;
@@ -57,7 +67,7 @@
         height: 100%;
     }
     .bannerText{
-        max-width: 540px;
+        max-width: 600px;
         position: absolute;
         top: 50%;
         left: 0;
@@ -70,21 +80,33 @@
             color: #110943;
             line-height: 1.6;
             float: left;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 }
-.homeBanner::after {
+.homeBanner{
+    &::before {
+        content: "";
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: -40vh;
+        z-index: -1;
+        border-radius: 50%;
+        border: 90px solid #eeeeee;
+    }
+    &::after {
     content: "";
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     position: absolute;
-    top: 40px;
-    right: -230px;
+    top: 30vh;
+    right: -40vh;
     z-index: -1;
-    background: #7462e1;
     border-radius: 50%;
-}
+    border: 90px solid rgb(116, 98, 225);
+}}
     
 .resume[role="baner-resume"]{
     width: 100%;
@@ -107,9 +129,22 @@
     top: 50%;
     transform: translateY(-50%);
     right: 100px;
+    &::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border-radius: 50%;
+        border: 20px solid #F0BA60;
+    }
+        
     img{
         width: 100%;
-        display: block;       
+        display: block; 
+        border-radius: 50%;      
     }
 
 }

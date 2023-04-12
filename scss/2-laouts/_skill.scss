@@ -51,12 +51,14 @@ svg circle{
   .eachBody svg{
     transform: rotate(-90deg);  
   }
-  .eachSubject{
+  .eachSubject {
     color: #e8fdff;
     margin-bottom: 5px;
     text-align: center;
     text-transform: uppercase;
-  }
+    font-weight: 600;
+    letter-spacing: 2px;
+}
 
 
 
