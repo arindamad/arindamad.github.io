@@ -76,7 +76,7 @@ $(document).ready(function(){
              animatedDone = false;
           }
         }else{
-          console.log("hidden");
+          // console.log("hidden");
           $circle.css({ strokeDashoffset: c});
           animatedDone = true;
         }
