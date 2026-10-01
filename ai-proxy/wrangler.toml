@@ -1,0 +1,7 @@
+name = "arindam-ai"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Set the API key as a secret (never commit it):
+#   npx wrangler secret put ANTHROPIC_API_KEY

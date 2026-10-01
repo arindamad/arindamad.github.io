@@ -65,14 +65,11 @@ function submitForm(e){
   // Save message
   saveMessage(name, email, msg, date, time, wh, ww, scale, getOS());
 
-  // Show alert
-  // document.querySelector('.alert').style.display = 'block';
-  $('.alert').fadeIn();
-
-  // Hide alert after 3 seconds
+  // Show thank-you toast, hide after 3 seconds
+  var toast = document.querySelector('.toast');
+  toast.classList.add('is-visible');
   setTimeout(function(){
-    $('.alert').fadeOut();
-    // document.querySelector('.alert').style.display = 'none';
+    toast.classList.remove('is-visible');
   },3000);
 
   // Clear form
